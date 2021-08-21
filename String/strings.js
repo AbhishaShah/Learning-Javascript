@@ -46,3 +46,40 @@ if(mystring.indexOf("?") !== 1) {
  *  Searches from the end of a string to its beginning.
 */
 console.log(str.lastIndexOf("l")) // 10
+
+/* ****** Boolean Searching ****** */
+
+console.log(str.startsWith("Hell")); // true
+
+console.log(str.endsWith("?")); //false
+
+console.log(str.includes("wo")); //true'
+
+/* ****** Replacing Searching ****** */
+console.log(str.replace("Hello","Hi")); // Hi, world 
+
+/* ****** Comparing String ****** */
+console.log("a" > "A");  // true => A lowercase letter is always greater than the uppercase
+
+/* ****** Repeat String n times ****** */
+console.log("{}".repeat(3)); //{}{}{}
+
+/* ****** Gets individual characters from string ****** */
+console.log(str.charAt("1")); // e
+console.log(str.charAt(str.length - 1)); // d
+
+/* ****** String padding functions in ES2017 ****** */
+console.log("A".padStart(3));  // "  A" => add spaces on the left to a length of 3
+console.log("A".padEnd(3)); // "A  " => add spaces on the left to a length of 3
+console.log("A".padStart(2,"$")); // $A
+console.log("10".padEnd(3,"%"));
+
+/* ****** String trimming ****** */
+console.log(" JS is awesome  ".trim()); // "JS is awesome" => Removes space at start and end
+console.log(" JS is awesome  ".trimEnd()); // " JS is awesome" => Removes space on right  
+console.log(" JS is awesome  ".trimStart()); // "JS is awesome " => Removes space on left  
+
+/* ****** concat string ****** */
+console.log(str.concat("!!")); // Hello, world!!
+
+// Note: Strings are immutable. So replace() or toUpperCase() like menthods return new string.
