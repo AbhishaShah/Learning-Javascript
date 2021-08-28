@@ -27,3 +27,10 @@
 ## Non-enumerable property:
 - These Properties don't show up when iterated through particular object using object.keys or for..in loop.
 - Object.defineProperty() lets you to create these read-only properties.
+
+## Object Methods:
+- **hasOwnProperty():** Checks object has own property with given name. It returns false for inherited property.
+- **propertyIsEnumerable():** Check for own property having enumereble attrubute true. 
+- **toString()**
+- **toLocaleString()**
+- **valueOf()**
