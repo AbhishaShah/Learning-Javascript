@@ -79,3 +79,34 @@
         greetings.map(word => word.split(" ")); // ["Hello", "all"] ,["", ""],["Good", "Morning"]
         greeting,flatMap(word => word.split(" "); //["Hello", "all", "", "", "Good", "Morning"]
         ``` 
+
+## SubArrays methods 
+1. **Slice(start [, end])**
+    - Returns the array from start to (but not including) end. 
+    - It will not modify original array.
+        ```Javascript
+        let data = [10,20,30,40,50];
+        data.slice(1,4); // [20 ,30 ,40]
+        ```
+2. **Splice(start, length,inserting elements])**
+    - It can delete elements from an array, insert new elements into an array, or do both at same time.
+    - The first argument specifies array position at which deletion/insertion is to begin.
+    - The secong argument specified number of elements that should be deleted from array.
+    - After two any followed arguments consider as inserting elements,starting at the position specified by the first argument.
+    - It will return deleted elements.
+    - It will modify origianl array. 
+        ```Javascript
+        let data = [10,20,30,40,50];
+        data.splice(2,4); // [30,40,50]
+        console.log(`Modified array: ${data} `); // [10,20]
+
+        data.splice(2,0,30,[40,50]); // [] => no elements removed
+          console.log(`Modified array: ${data} `); // [10,20,30,[40,50]]
+        ```
+ 3. **fill()**
+    - It fills the array with specified value.      
+       ```Javascript
+        let data = new Array(5);
+        data.fill(10); // [10,10,10,10,10]
+        data.fill(20,2,4); // [10, 10, 20, 20, 10]
+        ```

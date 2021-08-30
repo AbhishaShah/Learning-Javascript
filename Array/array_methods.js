@@ -17,7 +17,7 @@ console.log(newarr); // [ 'Python', 'PHP', 'JAVA', 'Javascript', 'SCALA', 'HTML'
 
 // Add elements to the specific position
 arr.splice(4, 0, "Node", "React");
-console.log(arr); //[ 'Python', 'PHP', 'JAVA', 'Node', 'React', 'Javascript', 'SCALA' ]
+console.log(arr); // ["Python", "PHP", "JAVA", "Javascript", "Node", "React", "SCALA"]
 
 //Remove elements from specific position
 newarr = arr.splice(4, 2);
@@ -38,7 +38,6 @@ nums.sort((no1, no2) => no1 - no2);
 console.log(`Sorted numeric array: ${nums}`); // 3,8,11,13,20
 
 // Creating New Arrays from existing Array (start, end)
-
-newarr = arr.slice(1, 3);
-console.log(`Original array: ${arr}`); // JAVA,Javascript,PHP,Python,SCALA
-console.log(`Sliced array: ${newarr}`); // Javascript,PHP
+let newarr = arr.slice(1, 3);
+console.log(`Original array: ${arr}`); // ["Python", "PHP", "JAVA", "Javascript", "SCALA"]
+console.log(`Sliced array: ${newarr}`); // ["PHP", "JAVA"]
