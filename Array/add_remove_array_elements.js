@@ -1,6 +1,6 @@
 let nums = [];
 
-// Add elements into array
+// Add elements to the end of array
 nums.push(10);
 nums.push(20);
 let newlen = nums.push(30);
@@ -22,7 +22,7 @@ removed = nums.shift();
 console.log(`After removing from the top: ${nums}`); //[ 30, 10, 20]
 console.log(`shift() return removed element: ${removed}`); // 40
 
-//Prints array length
+// Prints array length
 console.log(`Array length: ${nums.length}`); // 3
 
 // Check object is an array
