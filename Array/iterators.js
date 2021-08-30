@@ -41,9 +41,9 @@ console.log(`Filtered array: ${filtered}`); // Filtered array: 11,12,13,14,15
 
 //Reduce
 let total = numbers.reduce((sum, item) => sum + item);
-console.log(`Total: ${total}`);
+console.log(`Total: ${total}`);  // Total: 120
 
 let str = ["My ", "new ", "skill ", "is ", "Swimming "];
-console.log(str.reduce((line, word) => line + word));
-console.log(str.reduce((line, word) => word + line));
-console.log(str.reduceRight((line, word) => line + word));
+console.log(str.reduce((line, word) => line + word)); // "My new skill is Swimming "
+console.log(str.reduce((line, word) => word + line)); // "Swimming is skill new My "
+console.log(str.reduceRight((line, word) => line + word)); // "Swimming is skill new My "
