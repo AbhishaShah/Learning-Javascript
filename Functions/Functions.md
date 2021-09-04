@@ -41,9 +41,26 @@
     }
     myData("Joe","Sen","Music","Dancing","Gaming"); // Joe Sen Music Dancing Gaming
     ``` 
-# **Spread Parameters**: 
+## **Spread Parameters**: 
 -  It spread the array into the list of arguments.
     ```Javascript
-        let numbers = [20,45,30,10,15];
-        console.log(max(...numbers)); //45
+    let numbers = [20,45,30,10,15];
+    console.log(max(...numbers)); //45
     ``` 
+## **Function Methods**:
+- Points about `this` in Javascript
+    - "this" always refer to an object.
+    - "this" refers to an object which calls the function it contains.
+    - In the global context “this” refers to either window object or is undefined if the ‘strict mode’ is used.
+
+**The bind() method**:
+- It creates new function where `this` refers to the object passed in the parameter.
+`const myfunciton = function.bind(thisArg, optionalArguments)`
+
+**The call() method**:
+- It sets the `this` inside the function and immediatley executes that function. 
+`function.call(thisArg,optionalArguments)`
+
+**The apply() method**
+- It is same as call() method except it accepts array of arguments instead of comma seperated values.
+`function.apply(thisArg,[optionalArguments])`
