@@ -64,3 +64,11 @@
 **The apply() method**
 - It is same as call() method except it accepts array of arguments instead of comma seperated values.
 `function.apply(thisArg,[optionalArguments])`
+
+**First class functions**
+- Functions that can be assigned to any other variable or passed as an argument or can be returned by another function calles as First-class functions.
+- JavaScript treat function as a first-class-citizens. This means that functions are simply a value and are just another type of object.
+
+**Higher order functions**
+- It receives function as an argument and returns the function as output.
+- Array.prototype.map, Array.prototype.filter and Array.prototype.reduce are the Higher-Order functions.
