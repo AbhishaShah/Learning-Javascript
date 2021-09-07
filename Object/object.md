@@ -29,8 +29,15 @@
 - Object.defineProperty() lets you to create these read-only properties.
 
 ## Object Methods:
+- **Object.create():** objects could be created using this method and their prototypes easily setup. (object inheritance concept).
+- **Object.getPrototypeOf():** get an objects prototype. 
+- **Object.defineProperty():** adds a property to an object with descriptors like value,writable,enumerable,configurable.
+- **Object.getOwnPropertyDescriptor():** get the descriptors for the property.
+- **Object.defineProperties():** adds multiple properties to an object with descriptors.
 - **hasOwnProperty():** Checks object has own property with given name. It returns false for inherited property.
 - **propertyIsEnumerable():** Check for own property having enumereble attrubute true. 
+- **Object.keys():** get Array of all non-inherited, enumerable properties 
+- **Object.getOwnPropertyNames():** get Array of all non-inherited properties including non-enumerable
 - **toString()**
 - **toLocaleString()**
 - **valueOf()**
