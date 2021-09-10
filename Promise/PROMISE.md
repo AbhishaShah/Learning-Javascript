@@ -40,3 +40,12 @@
     console.log("Hello I will print first!");  
 ```  
 - The good article on promise [here](https://blog.bitsrc.io/understanding-promises-in-javascript-c5248de9ff8f).
+
+**Promise Fulfillment State with finally()**
+    - finally() method always invoked regardless of a promise is resolved or rejected. 
+
+**Promise.all()**
+    - The Promise.all() static method takes an array of promises and will return a single promise when all the promises in the Array are fulfilled.
+
+**Promise.race()**
+    - The Promise.race() static method takes an Array of promises and will return only the first promise that is fulfilled.
