@@ -8,13 +8,39 @@
 
 - By default arrays are copied by reference.
 
+## Add/Remove elements methods
+1. **push(value)**
+    - Appends an element to the end. 
+         ```Javascript
+        let data = [1,2,3,4,5];
+        data.push(6); 
+        console.log(data); // [1,2,3,4,5,6
+2. **pop(value)**
+    - Removes an element from the end.
+        ```Javascript
+        let data = [1,2,3,4,5,6];
+        data.pop();
+        console.log(data); // [1,2,3,4,5]
+3. **unshift(value)**
+    -  Add an element to the beginning of array.
+        ```Javascript
+        let data = [1,2,3,4,5];
+        data.unshift(6);
+        console.log(data); // [6,1,2,3,4,5]
+4. **shift(value)**
+    - Remove an element from the beginning of array.
+         ```Javascript
+        let data = [6,1,2,3,4,5];
+        data.shift();
+        console.log(data); // [1,2,3,4,5]
+
 ## Array Iterator methods
 1. **forEach(value,[index,array])**
     - It iterate each array element in order.
     - It can modify original array.
         ```Javascript
         let data = [1,2,3,4,5];
-        data.forEach(function(v,i,a) { a[i] = v * 2; } );
+        data.forEach(function(value,index,newDataArray) { newDataArray[index] = value * 2; } );
         console.log(data); // [2, 4, 6, 8, 10]
         ```
 2. **map()**
@@ -51,16 +77,16 @@
         let first = data.findIndex(ele =>  ele > 3);
         console.log(first); // 3
         ``` 
- 6. **every()**: Returns true only if every element matched the criteria.
+ 6. **every()**: Returns true only if every element matched the criteria, until false is returned.
     
- 7. **some()**: Returns true if at least one element matched the criteria. 
+ 7. **some()**: Returns true if at  least one element matched the criteria. 
 
  8. **reduce(element,[initial value])**
     - It walks through the array element-by-element, at each step adding the current array value to the result from the previous step until there are no more elements to add and returns the single value.
          ```Javascript
         let data = [1,2,3,4,5];
-        let sum = data.reduce(x,y => x + y , 0);
-        console.log(sum); // 15
+        let sum = data.reduce( (previous, current) => previous + current , 0);
+        console.log(sum); // 15 
         ```       
 9. **reduceRight(element,[initial value)**
     -  It works just like reduce(), except that it processes the array from right-to-left.  
@@ -101,7 +127,7 @@
         console.log(`Modified array: ${data} `); // [10,20]
 
         data.splice(2,0,30,[40,50]); // [] => no elements removed
-          console.log(`Modified array: ${data} `); // [10,20,30,[40,50]]
+        console.log(`Modified array: ${data} `); // [10,20,30,[40,50]]
         ```
  3. **fill()**
     - It fills the array with specified value.      
